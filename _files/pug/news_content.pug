@@ -1,0 +1,38 @@
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #news.content
+      #banner
+        img(src='./assets/images/banner/news-content.jpg', alt='')
+      #main
+        #subMenu
+          nav.trunPage
+            a.prev ← PREV
+            a.back(href="news.html")
+              img(src="./assets/images/icon-grid.svg", alt="")
+              span 回上一頁
+            a.next NEXT →
+        article.articleContent
+          .photo
+            a(data-caption="第一梯次日本瀨戶內海單車旅遊", data-fancybox="images", href="./_temp/images/news-content-1.jpg")
+              img(src="./_temp/images/news-content-1.jpg", alt="")
+            a(data-caption="第一梯次日本瀨戶內海單車旅遊", data-fancybox="images", href="./_temp/images/news-content-2.jpg")
+              img(src="./_temp/images/news-content-2.jpg", alt="")
+            a(data-caption="第一梯次日本瀨戶內海單車旅遊", data-fancybox="images", href="./_temp/images/news-content-3.jpg")
+              img(src="./_temp/images/news-content-3.jpg", alt="")
+          section
+            h2.title-unit
+              span NEWS
+              span 最新訊息
+            time.arrow 2018<br>10/21
+            h3.title-slogan 第一梯次日本瀨戶<br>內海單車旅遊
+            .textarea 第三屆臺中城市半程馬拉松6：00起跑，十二位創健夥伴今日凌晨集結，參與了這項運動盛會！<br>時時刻刻動起來，是創健建設堅持的理念，一起讓身體越來越健康，生活越來越精彩！
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/news.css')
+script.
+  $(function(){
+    var news = new fun_news();
+  });

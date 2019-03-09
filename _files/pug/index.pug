@@ -1,0 +1,120 @@
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #index
+      a(href='http://www.chwangjan.com.tw/index.php', target='_blank', title='創建建設')
+        img(src='./assets/images/logo-chwangjan.png', alt='').logo-chwangjan
+      #banner
+        .slider
+          ul.slider-pic
+            li
+              code(class="player" videoid="3yI2MQETD2s")
+            li
+              img(src='./_temp/images/index-banner.jpg', alt='')
+            li
+              code(class="player" videoid="3OuHdMuaFdc")
+            li
+              img(src='./_temp/images/index-banner.jpg', alt='')
+            li
+              img(src='./_temp/images/index-banner.jpg', alt='')
+          .slider-slogan
+            li.active
+              //- a.bdbox
+              //-   h3 品質 是生命
+              //-   p 灌出漂亮的清水混凝土，會直接表現在結果上
+              //-   span MORE
+            li
+              a.bdbox
+                h3 品質 朝著夢想向前進-II
+                p 一步一腳印，朝著夢想向前進
+                span MORE
+            li
+              //- a.bdbox
+              //-   h3 品質 協同合作-III
+              //-   p 尊重專業、協同合作、深厚信賴
+              //-   span MORE
+            li
+              a.bdbox
+                h3 品質 最重要的資產-IV
+                p 員工是最重要的資產，組織是最關鍵的核心
+                span MORE
+            li
+              a.bdbox
+                h3 品質 建築人-V
+                p 集結有理想的建築人，實現有夢想的精工藝
+                span MORE
+        .slider-nav
+          a.active(title='一腔赤誠初心，因理念而集結的菁英團隊因理念而集結的菁英團隊') 一腔赤誠初心，因理念而集結的菁英團隊因理念而集結的菁英團隊
+          a(title='一步一腳印 朝著夢想向前進') 一步一腳印 朝著夢想向前進
+          a(title='尋找屬於自己的 清水混凝土') 尋找屬於自己的 清水混凝土
+          a(title='一步一腳印 朝著夢想向前進') 一步一腳印 朝著夢想向前進
+          a(title='尋找屬於自己的 清水混凝土') 尋找屬於自己的 清水混凝土
+      #main
+        ul.companyImage
+          li.txt
+            h3.title-slogan 堅持 照起工<br>就像挑戰自行車環島，需要事前縝密的計劃，<br>耐住性子，練好功夫、理好裝備，之後才是一踏一蹬，<br>揮灑汗水，踏踏實實的前進。
+            p 啟宇相信，每一項工程，也都是一次次精密計劃的結果，忠於一道道<br>嚴謹工法的累積，我們自詡，時時紮穩馬步，<br>將流程作到極致，不求最大，但要盡我們所能作到最好！
+          li.pic
+            img(src="./assets/images/index/company-image.jpg", alt="")
+        .hotNews
+          h2.title-unit
+            span NEWS
+            span 最新訊息
+          .item
+            a(href="news_content.html")
+              h6 第三屆臺中城市半程馬拉松比賽
+              article 第三屆臺中城市半程馬拉松6：00起跑，十二位創健夥伴今日凌晨集結，參與了這項運動盛會！
+              span 公司訊息
+              time.arrow 2018<br>10/21
+            img(src="./_temp/images/news.jpg", alt="")
+        .intro
+          h2.title-unit
+            span INTRODUCTION
+            span 共創榮耀
+          .rowlist
+            li
+              a(href="about.html#2")
+                img(src="./assets/images/index/intro-1.jpg", alt="")
+              div
+                h6 員工是企業最重要的資產
+                span 教育訓練
+                p.txt-left 透過單車騎乘增進員工健康及協同合作，期望將公司的人力素質再提升
+            li
+              a(href="classic.html")
+                img(src="./assets/images/index/intro-2.jpg", alt="")
+              div
+                h6 阿里山沼平車站改建工程
+                span 榮獲
+                p.txt-left 行政院公共工程委員會｜第13屆金質獎佳作<br>行政院農委會｜優良農建工程獎建築類優等獎
+            li
+              a(data-fancybox href="https://www.youtube.com/watch?v=nK6dP2oEak4&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0").video
+                img(src="./assets/images/index/intro-3.jpg", alt="")
+              div
+                h6 建築師．獻給自然的祝福
+                span 一座回饋自然的建築
+                p.txt-left 用一份共生天地的期望，讓建築與世界、與環境、與自然共榮共存
+        .bg
+        ul.contact-us.halfBox
+          li
+            section
+              h2.title-unit
+                span CONTACT
+                span 用心安您心
+              a.btn-job.bdbox(href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4c3a4228346c3f2230683b1d1d1d1d5f2443a363189j99", target="_blank") 聯絡我們
+          li
+            section
+              h3.title-slogan 啟宇營造與您分享成果
+              div.txt-left 邁入建築業，是一項全新的旅程，我們期望，立基於啟宇營造多年來積累的經驗，我們將重新歸零學習，讓所有的夢想可以深耕實現，與臺灣的建築同業共同努力，為城市景觀與居住文化，貢獻創新、向上的力量！
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/index.css')
+link(rel='stylesheet', href='./assets/scripts/slick/slick.css')
+script(src="./assets/scripts/slick/slick.min.js")
+script.
+  $(function(){
+    $.getScript('./assets/scripts/video.js',function(){
+      var index = new fun_index();
+    });
+  });

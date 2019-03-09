@@ -1,0 +1,44 @@
+#service .information .halfBox {
+  margin: 80px auto 180px;
+  max-width: 1100px; }
+  #service .information .halfBox > li {
+    width: 55%; }
+  #service .information .halfBox > li:first-child {
+    width: 45%; }
+  #service .information .halfBox > li:last-child section {
+    width: 100%; }
+  #service .information .halfBox .code {
+    position: relative; }
+    #service .information .halfBox .code h6 {
+      letter-spacing: .15em; }
+    #service .information .halfBox .code a {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      height: 100%; }
+  #service .information .halfBox .rule a {
+    display: inline-block;
+    color: #005b4a;
+    line-height: 25px;
+    border-bottom: 1px solid #a0a0a0; }
+  #service .information .halfBox .rule .txt {
+    display: none;
+    line-height: 1.5em;
+    margin: 10px auto; }
+  #service .information .halfBox .btns-group {
+    margin: 40px auto 0;
+    max-width: 380px; }
+
+#service .joinus .halfBox {
+  max-width: 900px; }
+  #service .joinus .halfBox > li {
+    border: none !important;
+    width: 62.5%; }
+  #service .joinus .halfBox > li:first-child {
+    width: 37.5%;
+    padding-right: 2.5%; }
+
+#service .joinus .btn-job {
+  margin-top: 20px;
+  padding: 5px 3em; }

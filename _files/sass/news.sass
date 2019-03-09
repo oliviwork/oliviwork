@@ -1,0 +1,61 @@
+@import "_mixin.sass"
+
+#news
+  #main
+    padding-bottom: 200px
+  // news
+  &.news
+    .title-unit
+      margin-top: 80px
+    .list
+      max-width: 1020px
+      margin: 0 auto
+      >li
+        position: relative
+        border: 1px solid #e1e1e1
+        margin: 200px auto
+        min-height: 350px
+        padding: 5%
+        @extend %clearfix
+        &:first-child
+          margin-top: 50px
+      img
+        position: absolute
+        display: block
+        right: 5%
+        max-width: 60%
+      a
+        float: left
+        width: 30%
+        display: block
+      h6
+        font-size: 22px
+        margin-bottom: 20px
+      article
+        display: block
+        line-height: 1.5em
+        color: #999
+        padding-bottom: 20px
+        margin-bottom: 20px
+        border-bottom: 1px solid #e1e1e1
+      span
+        display: block
+        text-align: center
+      time.arrow
+        position: absolute
+        left: 18.5%
+        bottom: -50px
+        transform: translateX(-50%)
+      >li:nth-child(odd)
+        a
+          float: right
+        img
+          right: auto
+          left: 5%
+        time.arrow
+          left: auto
+          right: 18.5%
+          transform: translateX(50%)
+
+          
+        

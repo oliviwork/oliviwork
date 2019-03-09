@@ -1,0 +1,37 @@
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #quality
+      #banner
+        img(src='./assets/images/banner/quality.jpg', alt='')
+      #main
+        #subMenu
+          h2 工程管理
+          nav
+            a.active 工程整合
+            a 工地後勤
+            a 品質管理
+            a 管理會議
+        #slidePage
+          //- 工程整合
+          section
+            include page/quality-1.pug
+          //- 工地後勤
+          section
+            include page/quality-2.pug
+          //- 品質管理
+          section
+            include page/quality-3.pug
+          //- 管理會議
+          section
+            include page/quality-4.pug
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/quality.css')
+script.
+  $(function(){
+    var quality = new fun_quality();
+  });
+  

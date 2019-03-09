@@ -1,0 +1,20 @@
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #about
+      #banner
+        img(src='./assets/images/banner/about.jpg', alt='')
+      #main
+        #subMenu
+          h2 公司簡介
+          nav
+            a 公司沿革
+            a 經營團隊
+            a 永續經營
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/about.css')
+script.
+  var about = new fun_about();

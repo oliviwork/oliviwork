@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #about
+      #banner
+        img(src='./assets/images/banner/about.jpg', alt='')
+      #main
+        #subMenu
+          h2 公司簡介
+          nav
+            a.active 公司沿革
+            a 經營團隊
+            a 永續經營
+        #slidePage
+          //- 公司沿革
+          section
+            include page/about-1.pug
+          //- 經營團隊
+          section
+            include page/about-2.pug
+          //- 永續經營
+          section
+            include page/about-3.pug
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/about.css')

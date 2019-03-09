@@ -1,0 +1,217 @@
+@import "_mixin.sass"
+#index
+  #main
+    padding-bottom: 10%
+  .logo-chwangjan
+    position: relative
+    z-index: 1
+    top: 30px
+    left: 200px
+  .slider
+    position: relative
+    .slider-pic
+      position: relative
+      +setBg(#000)
+    .slider-slogan
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      li
+        display: none
+        &.active
+          display: block
+      a
+        color: #fff
+        display: block
+        padding: 50px 80px
+        &::before,&::after
+          border-color: #fff
+        h3
+          font-size: 36px
+          margin-bottom: 20px
+        p
+          font-size: 18px
+          margin-bottom: 30px
+        span
+          @extend %font-marcellus
+          font-size: 16px
+          margin-top: 10px
+          display: block
+  .slider-nav
+    display: table
+    table-layout: fixed
+    width: 100%
+    text-align: center
+    border-top: 5px solid #96835b
+    counter-reset: awesome-counter
+    font-size: 16px
+    a
+      display: table-cell
+      counter-increment: awesome-counter
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+      max-width: 100%
+      cursor: pointer
+      line-height: 45px
+      transition: all .4s
+      &::before
+        @extend %font-marcellus
+        content: "0" counter(awesome-counter)
+        font-size: 25px
+        margin: 0 10px
+        display: inline-block
+        vertical-align: middle
+      &.active
+        +setBg(#eef2f7)
+        &::before
+          color: #005a4a
+  .companyImage
+    margin: 10% 0
+    position: relative
+    .pic
+      vertical-align: middle
+      position: relative
+      display: block
+      max-width: 42.5%
+      &::before,&::after
+        content: ''
+        display: block
+        position: absolute
+        left: 30%
+        top: 0
+        width: 4%
+        height: 100%
+        +setBg(#fff)
+      &::after
+        width: 30%
+        height: 5%
+        left: 0
+        top: 40%
+    .txt
+      position: absolute
+      left: 44%
+      top: 50%
+      transform: translateY(-50%)
+      padding-left: 4%
+    .title-slogan
+      font-size: 22px
+      text-align: left
+      line-height: 1.75em
+      margin-bottom: 50px
+      margin-top: auto
+      padding-top: 0
+      &::before
+        left: 0
+        transform: none
+      &::after
+        left: 0
+        transform: none
+        width: 2em
+    img
+      display: block
+  .hotNews
+    margin-bottom: 10%
+    .item
+      position: relative
+      border: 1px solid #e1e1e1
+      margin: 200px auto
+      min-height: 350px
+      padding: 2.5%
+      max-width: 1020px
+      margin: 50px auto 0
+      @extend %clearfix
+      &:first-child
+        margin-top: 50px
+    img
+      position: absolute
+      display: block
+      right: 5%
+      max-width: 60%
+    a
+      float: left
+      width: 30%
+      display: block
+    h6
+      font-size: 22px
+      margin-bottom: 20px
+    article
+      display: block
+      line-height: 1.5em
+      color: #999
+      padding-bottom: 20px
+      margin-bottom: 20px
+      border-bottom: 1px solid #e1e1e1
+    span
+      display: block
+      text-align: center
+    time.arrow
+      position: absolute
+      left: 18.5%
+      bottom: -50px
+      transform: translateX(-50%)
+  .intro
+    padding: 5% 0
+    .title-unit
+      margin-bottom: 2.5%
+    .rowlist
+      border: 1px solid #ccc
+      >li
+        width: 33.333333%
+        padding: 4% 2%
+        border-left: 1px solid #e1e1e1
+        text-align: center
+        &:first-child
+          border-left: none
+      img
+        width: 100%
+        display: block
+        margin: 0 auto
+      div
+        max-width: 70%
+        margin: 0 auto
+      h6
+        font-size: 26px
+        font-weight: bold
+        margin: 20px auto 10px
+      span
+        display: block
+    .video
+      position: relative
+      display: block
+      &::after
+        content: url(../images/icon-play.png)
+        display: block
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+
+  .bg
+    margin: 5% auto
+    +setImgBg('index/pic-bg.jpg',center top,null,null,cover,fixed)
+    +setH(440px)
+  .contact-us
+    max-width: 780px
+    >li
+      width: 65%
+      border: none
+      &:first-child
+        width: 35%
+    .title-slogan
+      margin-top: auto
+      padding-top: 0
+      text-align: left
+      font-size: 22px
+      &::before,&::after
+        left: 0
+        transform: none
+      &::after
+        width: 2em
+    .btn-job
+      padding: 5px 3.5em
+      margin-top: 30px
+      &::before,&::after
+        border-color: #005b4a
+  

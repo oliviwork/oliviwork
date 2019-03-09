@@ -1,0 +1,19 @@
+#advanced .accounting .sevices {
+  display: block;
+  margin: 4% auto 10%; }
+
+#advanced .accounting .system {
+  display: table;
+  margin: 0 auto 10%; }
+  #advanced .accounting .system > li {
+    display: table-cell; }
+  #advanced .accounting .system img {
+    width: 100%; }
+
+#advanced .website .logo {
+  margin-bottom: 40px; }
+
+#advanced .website .halfBox {
+  margin: 80px auto 0; }
+  #advanced .website .halfBox > li:first-child .infoBox {
+    margin-left: 20%; }

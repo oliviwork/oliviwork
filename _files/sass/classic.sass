@@ -1,0 +1,145 @@
+@import "_mixin.sass"
+#classic
+  .title-unit
+    margin: 10% auto 2.5%
+  .deeds
+    .halfBox
+      max-width: 940px
+      margin: 2.5% auto
+      >li
+        border: none !important
+        width: 62%
+      >li:first-child
+        width: 38%
+        padding-right: 0
+    .pic
+      position: relative
+      max-width: 1095px
+      margin: 0 auto
+      >img
+    .txt
+      position: relative
+      text-align: right
+      line-height: 1.5em
+      padding-right: 240px
+      padding-top: 1em
+      h6
+        font-size: 22px
+        font-weight: bold
+        margin-bottom: 10px
+      img
+        position: absolute
+        bottom: -20px
+        right: 20px
+    .title-unit
+      margin-top: auto
+  .award
+    .list
+      text-align: center
+      margin: 40px auto
+      max-width: 870px
+      @extend %clearfix
+      img
+        display: block
+      a
+        position: relative
+        float: left
+        margin: 2.5px
+        overflow: hidden
+        &:nth-child(4n+1)
+          clear: left
+        &::before,&::after
+          display: block
+          position: absolute
+          left: 50%
+          transform: translate(-50%,-50%)
+          transition: all .4s
+        &::before
+          content: ''
+          width: 0
+          height: 0
+          top: 50%
+          +setBg(rgba(0,0,0,.7))
+        &::after
+          content: attr(data-title)
+          color: #fff
+          line-height: normal
+          width: 85%
+          top: 150%
+        &:hover
+          &::before
+            width: 100%
+            height: 100%
+          &::after
+            top: 50%
+  .performance
+    .pic
+      margin-top: 2.5%
+      +setBg(#636363)
+    img
+      display: block
+      margin: 0 auto
+      max-width: 90%
+      padding: 2.5% 0
+  .works
+    text-align: center
+    .title-unit
+      margin: 5% auto 2.5%
+    .list
+      max-width: 1210px
+      margin: 0 auto
+      &.loading
+        +setImgBg('loader.gif',center bottom)
+      @extend %clearfix
+      li
+        margin: 0 3% 8%
+        float: left
+        width: 27.333333%
+        &:nth-child(3n+1)
+          clear: left
+      img
+        display: block
+        margin: 0 auto
+        width: 100%
+        max-width: 290px
+      h6
+        font-size: 26px
+        padding: 15px 0 10px
+      span
+        line-height: 1.5em
+      a
+        display: block
+        padding: 5px
+        width: 70%
+        margin: 15px auto 0
+  &.content
+    .articleContent
+      .title-unit
+        margin-top: 0
+        margin-bottom: 60px
+    .works
+      .list
+        max-width: 950px
+        li
+          margin: 0 1% 8%
+          width: 31.333333%
+    .btn-more
+      margin-top: 50px
+      padding: 8px 5em
+  .nodata
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    margin-top: -20px
+    text-align: center
+    color: #fff
+    padding: 5px 5em
+    border-radius: 5px
+    opacity: 0
+    +setBg(rgba(0,0,0,0.5))
+    
+
+
+
+
+

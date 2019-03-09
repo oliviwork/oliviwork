@@ -1,0 +1,24 @@
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #advanced
+      #banner
+        img(src='./assets/images/banner/advanced.jpg', alt='')
+      #main
+        #subMenu
+          h2 先進流程
+          nav
+            a.active 財會系統
+            a 資訊網站
+        #slidePage
+          //- 財會系統
+          section
+            include page/advanced-1.pug
+          //- 資訊網站
+          section
+            include page/advanced-2.pug
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/advanced.css')

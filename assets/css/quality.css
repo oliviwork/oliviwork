@@ -1,0 +1,337 @@
+#quality .management .qualitylist .group-pic .pic {
+  *zoom: 1; }
+  #quality .management .qualitylist .group-pic .pic:before {
+    content: "";
+    display: table; }
+  #quality .management .qualitylist .group-pic .pic:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+#quality .management .education, #quality .management .pics {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+#quality .interface .model {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch; }
+
+#quality .management .qualitylist > .pic, #quality .management .qualitylist .group-pic, #quality .management .health-management .itemlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start; }
+
+#quality {
+  /*interface*/
+  /*rearServices*/
+  /*management*/
+  /*management*/ }
+  #quality .interface img {
+    display: block;
+    margin: 2.5% auto; }
+  #quality .interface ol {
+    text-align: center; }
+    #quality .interface ol li {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 5px 1em;
+      color: #fff;
+      background-color: #666; }
+  #quality .interface .model {
+    margin: 10% auto;
+    text-align: center;
+    border-top: 1px solid #ccc; }
+    #quality .interface .model a {
+      position: relative;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 20px 5px;
+      display: block;
+      width: 20%; }
+      #quality .interface .model a:nth-child(5n) {
+        border-right: none; }
+      #quality .interface .model a:nth-child(n+6):nth-child(-n+10), #quality .interface .model a:nth-child(n+16):nth-child(-n+20) {
+        background-color: #eef1f6; }
+    #quality .interface .model p {
+      line-height: normal;
+      margin-top: 10px; }
+  #quality .interface .tiles {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin: 10% auto; }
+    #quality .interface .tiles::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background-color: #ccc; }
+    #quality .interface .tiles p {
+      margin: 20px 0 30px 5%; }
+    #quality .interface .tiles img:not(.point) {
+      display: block;
+      width: 100%;
+      margin: auto;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc; }
+    #quality .interface .tiles .pic {
+      position: relative; }
+    #quality .interface .tiles .point {
+      position: absolute;
+      right: -8%;
+      top: 43.5%;
+      max-width: 16.77083333333333vw;
+      margin: auto;
+      transform: translateY(-50%);
+      z-index: 1; }
+    #quality .interface .tiles .title-slogan {
+      padding: 0 0 15px;
+      margin: 0 0 15px 5%; }
+      #quality .interface .tiles .title-slogan::before {
+        left: 0;
+        transform: none; }
+      #quality .interface .tiles .title-slogan::after {
+        left: 90px; }
+    #quality .interface .tiles li {
+      position: relative;
+      padding: 0;
+      width: 50%;
+      display: table-cell; }
+      #quality .interface .tiles li * {
+        text-align: left; }
+      #quality .interface .tiles li:first-child * {
+        text-align: right; }
+      #quality .interface .tiles li:first-child p {
+        margin: 20px 5% 30px 0; }
+      #quality .interface .tiles li:first-child .title-slogan {
+        margin: 0 5% 15px 0; }
+        #quality .interface .tiles li:first-child .title-slogan::before {
+          left: auto;
+          right: 0; }
+        #quality .interface .tiles li:first-child .title-slogan::after {
+          left: auto;
+          right: 90px;
+          transform: translateX(50%); }
+  #quality .plan .halfBox {
+    max-width: 1000px; }
+    #quality .plan .halfBox > li {
+      border: none;
+      width: 62.5%;
+      padding-left: 2.5%; }
+      #quality .plan .halfBox > li:first-child {
+        width: 37.5%;
+        padding-right: 2.5%; }
+    #quality .plan .halfBox ol {
+      text-align: left; }
+      #quality .plan .halfBox ol li {
+        display: block; }
+  #quality .plan img {
+    display: block;
+    margin: 5% auto; }
+  #quality .plan .charts {
+    max-width: 886px;
+    margin: 0 auto; }
+    #quality .plan .charts img {
+      margin-bottom: 10px; }
+  #quality .rearServices .rear .halfBox {
+    max-width: 1100px; }
+    #quality .rearServices .rear .halfBox > li {
+      width: 55%;
+      border: none;
+      padding-left: 3%; }
+    #quality .rearServices .rear .halfBox > li:first-child {
+      width: 45%;
+      padding-right: 3%; }
+      #quality .rearServices .rear .halfBox > li:first-child h6 {
+        margin-top: auto; }
+    #quality .rearServices .rear .halfBox h6 {
+      background-color: #666;
+      color: #fff;
+      padding: 5px 1em;
+      font-size: 18px;
+      margin: 20px 0 10px; }
+      #quality .rearServices .rear .halfBox h6:first-child {
+        margin-top: auto; }
+    #quality .rearServices .rear .halfBox p {
+      padding: 0 1em; }
+  #quality .rearServices .bim {
+    display: block;
+    margin: 5% auto; }
+  #quality .rearServices .data {
+    display: table;
+    margin: 0 auto; }
+    #quality .rearServices .data > li {
+      display: table-cell; }
+  #quality .rearServices .bim-application {
+    background-color: #eaeff5;
+    padding: 5% 0;
+    margin: 5% auto; }
+    #quality .rearServices .bim-application .bim {
+      display: block;
+      margin: 5% auto; }
+    #quality .rearServices .bim-application .rowlist {
+      margin-bottom: 5%; }
+      #quality .rearServices .bim-application .rowlist > li {
+        position: relative; }
+        #quality .rearServices .bim-application .rowlist > li::after, #quality .rearServices .bim-application .rowlist > li::before {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 50%;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          margin-left: -.5px;
+          background-color: #fff; }
+        #quality .rearServices .bim-application .rowlist > li:first-child::after {
+          left: 100%;
+          z-index: 1; }
+      #quality .rearServices .bim-application .rowlist p {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px; }
+  #quality .rearServices .qualityControl img {
+    display: block;
+    margin: 5% auto 10%; }
+  #quality .rearServices .audit .halfBox {
+    max-width: 1000px; }
+    #quality .rearServices .audit .halfBox > li {
+      border: none;
+      width: 47.5%;
+      padding-left: 2.5%; }
+      #quality .rearServices .audit .halfBox > li:first-child {
+        width: 52.5%;
+        padding-right: 2.5%; }
+      #quality .rearServices .audit .halfBox > li p {
+        color: #fff;
+        padding: 5px 1em;
+        margin: 20px 0;
+        background-color: #666; }
+        #quality .rearServices .audit .halfBox > li p.green {
+          background-color: #908f29; }
+  #quality .rearServices .audit img {
+    display: block;
+    margin: 5% auto; }
+  #quality .management .qualitylist {
+    max-width: 1090px;
+    margin: 0 auto; }
+    #quality .management .qualitylist .item {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border-bottom: 1px solid #ddd;
+      margin-top: 40px; }
+      #quality .management .qualitylist .item::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 2em;
+        height: 1px;
+        background-color: #005b4a; }
+    #quality .management .qualitylist > .pic {
+      margin: 20px -5px; }
+      #quality .management .qualitylist > .pic a {
+        display: block;
+        margin: 0 5px 20px;
+        width: 210px;
+        max-width: calc(20% - 10px); }
+      #quality .management .qualitylist > .pic p {
+        margin: 5px auto;
+        word-break: break-all;
+        line-height: normal; }
+      #quality .management .qualitylist > .pic img {
+        display: block;
+        margin: 0 auto; }
+    #quality .management .qualitylist .group-pic {
+      margin: 0 -5px 50px; }
+      #quality .management .qualitylist .group-pic .pic {
+        margin: 10px 5px 30px;
+        width: calc(50% - 10px); }
+        #quality .management .qualitylist .group-pic .pic::before {
+          content: attr(data-title);
+          display: block;
+          text-align: center;
+          font-size: 18px;
+          padding: 5px 1em;
+          background-color: #eaeff5; }
+        #quality .management .qualitylist .group-pic .pic a {
+          width: 265px;
+          max-width: calc(50% - 2.5px);
+          float: right; }
+          #quality .management .qualitylist .group-pic .pic a:nth-child(odd) {
+            float: left; }
+        #quality .management .qualitylist .group-pic .pic p {
+          line-height: 1.5em;
+          margin-top: 10px; }
+  #quality .management .health-management {
+    margin: 0 auto 5%;
+    padding: 2.5% 0;
+    background-color: #eaeff5; }
+    #quality .management .health-management .title-unit {
+      margin-bottom: 30px; }
+    #quality .management .health-management .halfBox {
+      max-width: 1000px;
+      margin: 0 auto; }
+      #quality .management .health-management .halfBox > li {
+        width: 55%;
+        border: none;
+        padding-left: 3%; }
+        #quality .management .health-management .halfBox > li:first-child {
+          width: 45%;
+          padding-right: 3%; }
+    #quality .management .health-management .itemlist {
+      max-width: 600px;
+      margin: 3% auto; }
+      #quality .management .health-management .itemlist > li {
+        margin-bottom: 30px; }
+    #quality .management .health-management .halfDouble {
+      max-width: 1110px; }
+  #quality .management .warranty .title-unit {
+    margin-bottom: 0; }
+  #quality .management .warranty img {
+    margin: 5% auto 0; }
+  #quality .management .halfDouble {
+    max-width: 1110px; }
+  #quality .management .education {
+    align-items: flex-start;
+    margin: 5% auto 2.5%; }
+    #quality .management .education .txt {
+      padding-left: 2.5%; }
+    #quality .management .education .title-slogan {
+      padding-top: 0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      text-align: left; }
+      #quality .management .education .title-slogan::before {
+        left: 0;
+        transform: none;
+        width: 120px; }
+      #quality .management .education .title-slogan::after {
+        left: 0;
+        width: 2em;
+        transform: none; }
+  #quality .management .pics {
+    margin: 5% auto 0; }
+    #quality .management .pics > li {
+      width: 14.28571428571429%; }
+    #quality .management .pics img {
+      width: 100%; }

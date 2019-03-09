@@ -1,0 +1,342 @@
+@import "_mixin.sass"
+#quality
+  /*interface*/
+  .interface
+    img
+      display: block
+      margin: 2.5% auto
+    ol
+      text-align: center
+      li
+        display: inline-block
+        margin: 10px 5px
+        padding: 5px 1em
+        color: #fff
+        +setBg(#666)
+    .model
+      margin: 10% auto
+      text-align: center
+      border-top: 1px solid #ccc
+      @extend %flex-wrap
+      a
+        position: relative
+        border-right: 1px solid #ccc
+        border-bottom: 1px solid #ccc
+        padding: 20px 5px
+        display: block
+        width: 20%
+        &:nth-child(5n)
+          border-right: none
+        &:nth-child(n+6):nth-child(-n+10),&:nth-child(n+16):nth-child(-n+20)
+          +setBg(#eef1f6)
+      p
+        line-height: normal
+        margin-top: 10px
+    .tiles
+      position: relative
+      display: table
+      width: 100%
+      margin: 10% auto
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        width: 1px
+        height: 100%
+        +setBg(#ccc)
+      p
+        margin: 20px 0 30px 5%
+      img:not(.point)
+        display: block
+        width: 100%
+        margin: auto
+        border-top: 1px solid #ccc
+        border-bottom: 1px solid #ccc
+      .pic
+        position: relative
+      .point
+        position: absolute
+        right: -8%
+        top: 43.5%
+        max-width: 16.77083333333333vw
+        margin: auto
+        transform: translateY(-50%)
+        z-index: 1
+      .title-slogan
+        padding: 0 0 15px
+        margin: 0 0 15px 5%
+        &::before
+          left: 0
+          transform: none
+        &::after
+          left: 90px
+      li
+        position: relative
+        padding: 0
+        width: 50%
+        display: table-cell
+        *
+          text-align: left
+        &:first-child
+          *
+            text-align: right
+          p
+            margin: 20px 5% 30px 0
+          .title-slogan
+            margin: 0 5% 15px 0
+            &::before
+              left: auto
+              right: 0
+            &::after
+              left: auto
+              right: 90px
+              transform: translateX(50%)
+  .plan
+    .halfBox
+      max-width: 1000px
+      >li
+        border: none
+        width: 62.5%
+        padding-left: 2.5%
+        &:first-child
+          width: 37.5%
+          padding-right: 2.5%
+      ol
+        text-align: left
+        li
+          display: block
+    img
+      display: block
+      margin: 5% auto
+    .charts
+      max-width: 886px
+      margin: 0 auto
+      img
+        margin-bottom: 10px
+
+  /*rearServices*/
+  .rearServices
+    .rear
+      .halfBox
+        max-width: 1100px
+        >li
+          width: 55%
+          border: none
+          padding-left: 3%
+        >li:first-child
+          width: 45%
+          padding-right: 3%
+          h6
+            margin-top: auto
+        h6
+          +setBg(#666)
+          color: #fff
+          padding: 5px 1em
+          font-size: 18px
+          margin: 20px 0 10px
+          &:first-child
+            margin-top: auto
+        p
+          padding: 0 1em
+    .bim
+      display: block
+      margin: 5% auto
+    .data
+      display: table
+      margin: 0 auto
+      >li
+        display: table-cell
+    .bim-application
+      +setBg(#eaeff5)
+      padding: 5% 0
+      margin: 5% auto
+      .bim
+        display: block
+        margin: 5% auto
+      .rowlist
+        margin-bottom: 5%
+        >li
+          position: relative
+          &::after,&::before
+            content: ''
+            display: block
+            position: absolute
+            left: 50%
+            top: 0
+            width: 1px
+            height: 100%
+            margin-left: -.5px
+            +setBg(#fff)
+          &:first-child::after
+            left: 100%
+            z-index: 1
+        p
+          position: absolute
+          width: 100%
+          text-align: center
+          margin-top: 5px
+    .qualityControl
+      img
+        display: block
+        margin: 5% auto 10%
+    .audit
+      .halfBox
+        max-width: 1000px
+        >li
+          border: none
+          width: 47.5%
+          padding-left: 2.5%
+          &:first-child
+            width: 52.5%
+            padding-right: 2.5%
+          p
+            color: #fff
+            padding: 5px 1em
+            margin: 20px 0
+            +setBg(#666)
+            &.green
+              +setBg(#908f29)
+      img
+        display: block
+        margin: 5% auto
+
+  /*management*/
+  .management
+    .qualitylist
+      max-width: 1090px
+      margin: 0 auto
+      .item
+        position: relative
+        display: inline-block
+        margin-bottom: 20px
+        font-size: 18px
+        border-bottom: 1px solid #ddd
+        margin-top: 40px
+        &::before
+          content: ''
+          display: block
+          position: absolute
+          left: 0
+          bottom: -1px
+          width: 2em
+          height: 1px
+          +setBg(#005b4a)
+      >.pic
+        @extend %flex-wrapstart
+        margin: 20px -5px
+        a
+          display: block
+          margin: 0 5px 20px
+          width: 210px
+          max-width: calc(20% - 10px)
+        p
+          margin: 5px auto
+          word-break: break-all
+          line-height: normal
+        img
+          display: block
+          margin: 0 auto
+      .group-pic
+        margin: 0 -5px 50px
+        @extend %flex-wrapstart
+        .pic
+          margin: 10px 5px 30px
+          width: calc(50% - 10px)
+          @extend %clearfix
+          &::before
+            content: attr(data-title)
+            display: block
+            text-align: center
+            font-size: 18px
+            padding: 5px 1em
+            +setBg(#eaeff5)
+          a
+            width: 265px
+            max-width: calc(50% - 2.5px)
+            float: right
+            &:nth-child(odd)
+              float: left
+          p
+            line-height: 1.5em
+            margin-top: 10px
+    .health-management
+      margin: 0 auto 5%
+      padding: 2.5% 0
+      +setBg(#eaeff5)
+      .title-unit
+        margin-bottom: 30px
+      .halfBox
+        max-width: 1000px
+        margin: 0 auto
+        >li
+          width: 55%
+          border: none
+          padding-left: 3%
+          &:first-child
+            width: 45%
+            padding-right: 3%
+      .itemlist
+        max-width: 600px
+        margin: 3% auto
+        @extend %flex-wrapstart
+        >li
+          margin-bottom: 30px
+      .halfDouble
+        max-width: 1110px
+    .warranty
+      .title-unit
+        margin-bottom: 0
+      img
+        margin: 5% auto 0
+
+  /*management*/
+  .management
+    .halfDouble
+      max-width: 1110px
+    .education
+      @extend %flex-nowrap
+      align-items: flex-start
+      margin: 5% auto 2.5%
+      .txt
+        padding-left: 2.5%
+      .title-slogan
+        padding-top: 0
+        padding-bottom: 10px
+        margin-bottom: 20px
+        font-size: 18px
+        text-align: left
+        &::before
+          left: 0
+          transform: none
+          width: 120px
+        &::after
+          left: 0
+          width: 2em
+          transform: none
+    .pics
+      @extend %flex-nowrap
+      margin: 5% auto 0
+      >li
+        width: 14.28571428571429%
+      img
+        width: 100%
+            
+        
+        
+      
+
+
+
+      
+
+    
+
+
+
+
+        
+
+
+        
+  

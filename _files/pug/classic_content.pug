@@ -1,0 +1,79 @@
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #classic.content
+      #banner
+        img(src='./assets/images/banner/classic-content.jpg', alt='')
+      #main
+        #subMenu
+          nav.trunPage
+            a.prev ← PREV
+            a.back(href="classic.html")
+              img(src="./assets/images/icon-grid.svg", alt="")
+              span 回上一頁
+            a.next NEXT →
+        article.articleContent
+          .photo
+            a(data-caption="第一梯次日本瀨戶內海單車旅遊", data-fancybox="images", href="./_temp/images/classic-content-1.jpg")
+              img(src="./_temp/images/classic-content-1.jpg", alt="")
+            a(data-caption="第一梯次日本瀨戶內海單車旅遊", data-fancybox="images", href="./_temp/images/classic-content-2.jpg")
+              img(src="./_temp/images/classic-content-2.jpg", alt="")
+            a(data-caption="第一梯次日本瀨戶內海單車旅遊", data-fancybox="images", href="./_temp/images/classic-content-3.jpg")
+              img(src="./_temp/images/classic-content-3.jpg", alt="")
+          section
+            h2.title-unit
+              span INFORMATION
+              span 建案資訊
+            h3.title-slogan 知己樹廈
+            .textarea 規劃類型：集合住宅<br>完工時間：103<br>結構形式：RC造<br>樓地板面積(坪)： 4,503<br>座落地點：台中市水湳經貿園區
+        .works
+          h2.title-unit
+            span RELATED
+            span 集合住宅
+          .list
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+            li
+              img(src="./_temp/images/classic-content-list.jpg", alt="")
+              h6 創健月亮公園
+              a(href="classic_content.html").bdbox MORE
+          a.btn-more.bdbox 更多實績
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/classic.css')
+script.
+  $(function(){
+    var classic = new fun_classic();
+  });

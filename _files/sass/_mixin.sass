@@ -1,0 +1,156 @@
+//- variable
+%clearfix
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  *zoom: 1
+
+%font-marcellus
+  font-family: 'Marcellus', 'Microsoft JhengHei', serif
+%font-playfair
+  font-family: 'Playfair Display', 'Microsoft JhengHei', serif
+
+%flex-nowrap
+  display: flex
+  display: -webkit-flex
+  flex-wrap: nowrap
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  align-content: center
+
+%flex-wrap
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: flex-start
+	align-items: stretch
+	align-content: stretch
+
+%flex-wrapstart
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: flex-start
+	align-items: stretch
+	align-content: flex-start
+
+//- mixin
+@mixin setImgBg($file, $post:null, $repeat:null, $color:null, $size:null,$attachment:null)
+  background-image: url(../images/#{$file})
+  @if($post)
+    background-position: $post
+  @else
+    background-position: top center
+  @if($repeat)
+    background-repeat: $repeat
+  @else
+    background-repeat: no-repeat
+  @if($color)
+    +setBg($color)
+  @if($size)
+    background-size: $size
+  @if($attachment)
+    background-attachment: $attachment
+
+@mixin setBg($color)
+	background-color: $color
+
+@mixin setW($w)
+  width: $w
+
+@mixin setH($h)
+  height: $h
+
+@mixin setSize($w,$h)
+  +setW($w)
+  +setH($h)
+
+@mixin triangle($w,$color)
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: $w
+  border-color: $color
+
+//- hamburger icon
+$menu-bgcolor: #000
+$menu-size: 60px
+$menu-height: 20px
+$menu-width: 30px
+$menu-line-size: 3px
+$menu-line-color: #fff
+$menu-line-radius: $menu-line-size
+$menu-to-translate: ($menu-height - $menu-line-size) / 2
+$menu-bounce: cubic-bezier(.87,-.50,.19,1.50)
+
+@mixin hamburgerMenu
+  .menu--effect
+    position: relative
+    height: $menu-size
+    width: $menu-size
+    background-color: $menu-bgcolor
+    cursor: pointer
+    overflow: hidden
+    .menu__icon
+      position: absolute
+      width: $menu-width
+      height: $menu-height
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    .menu__line
+      position: absolute
+      left: 0
+      background-color: $menu-line-color
+      height: $menu-line-size
+      width: 100%
+      border-radius: $menu-line-radius
+      pointer-events: none
+      &--1
+        top: 0
+      &--2
+        top: 0
+        bottom: 0
+        margin: auto
+      &--3
+        bottom: 0
+    & .menu__line--4,
+    & .menu__line--5
+      opacity: 0
+      top: $menu-to-translate
+      transition: opacity .2s ease-in-out,transform .2s ease-in-out
+    & .menu__line--1
+      transition: width .2s ease-in-out .4s
+    & .menu__line--2
+      transition: width .2s ease-in-out .3s
+    & .menu__line--3
+      transition: width .2s ease-in-out .2s
+    & .menu__line--4 
+      transform: rotate(45deg) translate3d($menu-width,0,0) 
+      transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s
+    & .menu__line--5 
+      transform:  rotate(-45deg) translate3d($menu-width,0,0) 
+      transition: opacity .2s ease-in-out,transform .2s ease-in-out
+    // Open
+    &.open .menu__line--1
+      width: 0
+      transition: width .2s ease-in-out
+    &.open .menu__line--2
+      width: 0
+      transition: width .2s ease-in-out .1s
+    &.open .menu__line--3
+      width: 0
+      transition: width .2s ease-in-out .2s
+    &.open .menu__line--4 
+      opacity: 1
+      transform: rotate(45deg) translate3d(0,0,0) 
+      transition: opacity .2s ease-in-out .2s,transform .2s ease-in-out .2s
+    &.open .menu__line--5 
+      opacity: 1
+      transform:  rotate(-45deg) translate3d(0,0,0) 
+      transition: opacity .2s ease-in-out .4s,transform .2s ease-in-out .4s

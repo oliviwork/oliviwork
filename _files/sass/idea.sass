@@ -1,0 +1,64 @@
+@import "_mixin.sass"
+#idea
+  text-align: center
+  .list
+    position: relative
+    max-width: 1000px
+    padding-bottom: 120px
+    margin: 60px auto 0
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      width: 1px
+      height: 100%
+      left: 50%
+      margin-left: .5px
+      top: 0
+      +setBg(#a0a0a0)
+    >li
+      @extend %clearfix
+      margin-top: 150px
+      >*
+        width: 45%
+      &:nth-child(odd)
+        >img
+          float: left
+          margin-right: 5%
+        >div
+          float: right
+          margin-left: 5%
+      &:nth-child(even)
+        >img
+          float: right
+          margin-left: 5%
+        >div
+          float: left
+          margin-right: 5%
+      &:first-child
+        margin-top: auto
+      p
+        text-align: left
+  .icon
+    color: #96835b
+    font-size: 24px
+    span
+      display: block
+      margin: 40px auto 5px
+    &+h6
+      font-size: 18px
+      margin-bottom: 1em
+  .bg
+    position: relative
+    +setImgBg('idea/pic-bg.jpg',center center,null,null,cover,fixed)
+    +setH(430px)
+    margin-bottom: 60px
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      left: 50%
+      bottom: -40px
+      height: 40px
+      width: 1px
+      +setBg(#a0a0a0)

@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #service
+      #banner
+        img(src='./assets/images/banner/service.jpg', alt='')
+      #main
+        #subMenu
+          h2 聯絡我們
+          nav
+            a.active 客戶服務
+            a 加入啟宇
+        #slidePage
+          //- 客戶服務
+          section
+            include page/service-1.pug
+          //- 加入啟宇
+          section
+            include page/service-2.pug
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/service.css')
+script.
+  $(function(){
+    var service = new fun_service();
+  });

@@ -1,0 +1,72 @@
+html(lang='en')
+  head
+    include template/assets.pug
+  body
+    include template/header.pug
+    #news.news
+      #banner
+        img(src='./assets/images/banner/news.jpg', alt='')
+      #main
+        #subMenu
+          nav
+            a.active 全部訊息 / 209
+            a 公司訊息 / 105
+            a 工程訊息 / 85
+        h2.title-unit
+          span NEWS
+          span 最新訊息
+        ul.list
+          li
+            a(href="news_content.html")
+              h6 第三屆臺中城市半程馬拉松比賽
+              article 第三屆臺中城市半程馬拉松6：00起跑，十二位創健夥伴今日凌晨集結，參與了這項運動盛會！
+              span 公司訊息
+              time.arrow 2018<br>10/21
+            img(src="./_temp/images/news.jpg", alt="")
+          li
+            a(href="news_content.html")
+              h6 第三屆臺中城市半程
+              article 第三屆城市半程馬拉松6：00起跑
+              span 公司訊息
+              time.arrow 2018<br>10/21
+            img(src="./_temp/images/news.jpg", alt="")
+          li
+            a(href="news_content.html")
+              h6 第三屆臺中城市半程馬拉松比賽
+              article 第三屆臺中城市半程馬拉松6：00起跑，十二位創健夥伴今日凌晨集結，參與了這項運動盛會！
+              span 公司訊息
+              time.arrow 2018<br>10/21
+            img(src="./_temp/images/news.jpg", alt="")
+          li
+            a(href="news_content.html")
+              h6 第三屆臺中城市半程
+              article 第三屆城市半程馬拉松6：00起跑
+              span 公司訊息
+              time.arrow 2018<br>10/21
+            img(src="./_temp/images/news.jpg", alt="")
+          li
+            a(href="news_content.html")
+              h6 第三屆臺中城市半程馬拉松比賽
+              article 第三屆臺中城市半程馬拉松6：00起跑，十二位創健夥伴今日凌晨集結，參與了這項運動盛會！
+              span 公司訊息
+              time.arrow 2018<br>10/21
+            img(src="./_temp/images/news.jpg", alt="")
+          li
+            a(href="news_content.html")
+              h6 第三屆臺中城市半程馬拉松比賽
+              article 第三屆城市半程馬拉松6：00起跑
+              span 公司訊息
+              time.arrow 2018<br>10/21
+            img(src="./_temp/images/news.jpg", alt="")
+        #pager
+          a(href="").prev
+          a(href="").active 1
+          a(href="") 2
+          a(href="") 3
+          a(href="") 4
+          a(href="") 5
+          a(href="") 6
+          a(href="").next
+    include template/footer.pug
+    include template/loading.pug
+link(rel='stylesheet', href='./assets/css/news.css')

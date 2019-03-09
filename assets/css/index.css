@@ -1,0 +1,235 @@
+#index .hotNews .item {
+  *zoom: 1; }
+  #index .hotNews .item:before {
+    content: "";
+    display: table; }
+  #index .hotNews .item:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+#index .slider .slider-slogan a span, #index .slider-nav a::before {
+  font-family: 'Marcellus', 'Microsoft JhengHei', serif; }
+
+#index #main {
+  padding-bottom: 10%; }
+
+#index .logo-chwangjan {
+  position: relative;
+  z-index: 1;
+  top: 30px;
+  left: 200px; }
+
+#index .slider {
+  position: relative; }
+  #index .slider .slider-pic {
+    position: relative;
+    background-color: #000; }
+  #index .slider .slider-slogan {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    #index .slider .slider-slogan li {
+      display: none; }
+      #index .slider .slider-slogan li.active {
+        display: block; }
+    #index .slider .slider-slogan a {
+      color: #fff;
+      display: block;
+      padding: 50px 80px; }
+      #index .slider .slider-slogan a::before, #index .slider .slider-slogan a::after {
+        border-color: #fff; }
+      #index .slider .slider-slogan a h3 {
+        font-size: 36px;
+        margin-bottom: 20px; }
+      #index .slider .slider-slogan a p {
+        font-size: 18px;
+        margin-bottom: 30px; }
+      #index .slider .slider-slogan a span {
+        font-size: 16px;
+        margin-top: 10px;
+        display: block; }
+
+#index .slider-nav {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  border-top: 5px solid #96835b;
+  counter-reset: awesome-counter;
+  font-size: 16px; }
+  #index .slider-nav a {
+    display: table-cell;
+    counter-increment: awesome-counter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    cursor: pointer;
+    line-height: 45px;
+    transition: all .4s; }
+    #index .slider-nav a::before {
+      content: "0" counter(awesome-counter);
+      font-size: 25px;
+      margin: 0 10px;
+      display: inline-block;
+      vertical-align: middle; }
+    #index .slider-nav a.active {
+      background-color: #eef2f7; }
+      #index .slider-nav a.active::before {
+        color: #005a4a; }
+
+#index .companyImage {
+  margin: 10% 0;
+  position: relative; }
+  #index .companyImage .pic {
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    max-width: 42.5%; }
+    #index .companyImage .pic::before, #index .companyImage .pic::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 30%;
+      top: 0;
+      width: 4%;
+      height: 100%;
+      background-color: #fff; }
+    #index .companyImage .pic::after {
+      width: 30%;
+      height: 5%;
+      left: 0;
+      top: 40%; }
+  #index .companyImage .txt {
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 4%; }
+  #index .companyImage .title-slogan {
+    font-size: 22px;
+    text-align: left;
+    line-height: 1.75em;
+    margin-bottom: 50px;
+    margin-top: auto;
+    padding-top: 0; }
+    #index .companyImage .title-slogan::before {
+      left: 0;
+      transform: none; }
+    #index .companyImage .title-slogan::after {
+      left: 0;
+      transform: none;
+      width: 2em; }
+  #index .companyImage img {
+    display: block; }
+
+#index .hotNews {
+  margin-bottom: 10%; }
+  #index .hotNews .item {
+    position: relative;
+    border: 1px solid #e1e1e1;
+    margin: 200px auto;
+    min-height: 350px;
+    padding: 2.5%;
+    max-width: 1020px;
+    margin: 50px auto 0; }
+    #index .hotNews .item:first-child {
+      margin-top: 50px; }
+  #index .hotNews img {
+    position: absolute;
+    display: block;
+    right: 5%;
+    max-width: 60%; }
+  #index .hotNews a {
+    float: left;
+    width: 30%;
+    display: block; }
+  #index .hotNews h6 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  #index .hotNews article {
+    display: block;
+    line-height: 1.5em;
+    color: #999;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1; }
+  #index .hotNews span {
+    display: block;
+    text-align: center; }
+  #index .hotNews time.arrow {
+    position: absolute;
+    left: 18.5%;
+    bottom: -50px;
+    transform: translateX(-50%); }
+
+#index .intro {
+  padding: 5% 0; }
+  #index .intro .title-unit {
+    margin-bottom: 2.5%; }
+  #index .intro .rowlist {
+    border: 1px solid #ccc; }
+    #index .intro .rowlist > li {
+      width: 33.333333%;
+      padding: 4% 2%;
+      border-left: 1px solid #e1e1e1;
+      text-align: center; }
+      #index .intro .rowlist > li:first-child {
+        border-left: none; }
+    #index .intro .rowlist img {
+      width: 100%;
+      display: block;
+      margin: 0 auto; }
+    #index .intro .rowlist div {
+      max-width: 70%;
+      margin: 0 auto; }
+    #index .intro .rowlist h6 {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 20px auto 10px; }
+    #index .intro .rowlist span {
+      display: block; }
+  #index .intro .video {
+    position: relative;
+    display: block; }
+    #index .intro .video::after {
+      content: url(../images/icon-play.png);
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+
+#index .bg {
+  margin: 5% auto;
+  background-image: url(../images/index/pic-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 440px; }
+
+#index .contact-us {
+  max-width: 780px; }
+  #index .contact-us > li {
+    width: 65%;
+    border: none; }
+    #index .contact-us > li:first-child {
+      width: 35%; }
+  #index .contact-us .title-slogan {
+    margin-top: auto;
+    padding-top: 0;
+    text-align: left;
+    font-size: 22px; }
+    #index .contact-us .title-slogan::before, #index .contact-us .title-slogan::after {
+      left: 0;
+      transform: none; }
+    #index .contact-us .title-slogan::after {
+      width: 2em; }
+  #index .contact-us .btn-job {
+    padding: 5px 3.5em;
+    margin-top: 30px; }
+    #index .contact-us .btn-job::before, #index .contact-us .btn-job::after {
+      border-color: #005b4a; }

@@ -1,0 +1,210 @@
+@import "_mixin.sass"
+#about
+  #slidePage
+    >section
+      >div
+        padding-bottom: 100px
+  // 公司沿革
+  .history
+    .list
+      margin: 50px auto
+      max-width: 980px
+      >li
+        margin: 50px auto
+        min-height: 95px
+        display: table
+        width: 100%
+      time
+        position: relative
+        display: table-cell
+        vertical-align: middle
+        width: 190px
+        text-align: center
+        border-left: 12px solid #909119
+        font-weight: bold
+        font-size: 18px
+        +setBg(#efeacb)
+      time::before,time::after,p::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        +setSize(35px,100%)
+        +setImgBg('about/triangle.png',right top,null,null,100% 300%,null)
+        transform: translateX(100%)
+      time::after
+        transform: scaleX(-1)
+        right: -70px
+      p
+        display: table-cell
+        vertical-align: middle
+        position: relative
+        color: #fff
+        padding: 10px
+        &::before
+          right: 35px
+        &::after
+          content: ""
+          display: block
+          position: absolute
+          left: 70px
+          top: 0
+          width: calc(100% - 105px)
+          height: 100%
+          +setBg(#909119)
+      span
+        position: relative
+        display: block
+        z-index: 1
+        margin: 0 35px 0 70px
+        padding: 0 3em
+      >li:nth-child(2n)
+        time
+          border-left-color: #0e5a48
+          &::before,&::after
+            background-position: right 50%
+        p
+          &::before
+            background-position: right 50%
+          &::after
+            +setBg(#0e5a48)
+      >li:nth-child(3n)
+        time
+          border-left-color: #b18247
+          &::before,&::after
+            background-position: right 100%
+        p
+          &::before
+            background-position: right 100%
+          &::after
+            +setBg(#b18247)
+  .group
+    .list
+      display: table
+      margin: 0 auto
+      text-align: center
+      max-width: 1000px
+      li
+        width: 25%
+        display: table-cell
+        line-height: normal
+      img
+        display: block
+        width: 100%
+      span
+        font-size: 16px
+        margin-top: 1em
+        display: block
+  .certificate
+    .list
+      +setBg(#eaeff5)
+      ul
+        display: table
+        width: 100%
+        table-layout: fixed
+        text-align: center
+      li
+        display: table-cell
+        padding: 30px 10px
+        vertical-align: middle
+        width: 33.333333%
+        border: 1px solid #fff
+      img,div
+        display: inline-block
+        vertical-align: middle
+      img
+        margin: 10px 5%
+        box-shadow: 2px 2px 5px rgba(0,0,0,.5)
+      span
+        font-size: 24px
+    .txt
+      position: relative
+      text-align: center
+      font-size: 24px
+      margin: 30px auto 0
+      padding: 30px 0 0
+      &::before,&:after
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        top: 0
+        height: 1px
+        transform: translateX(-50%)
+      &::before
+        width: 180px
+        +setBg(#e1e1e1)
+      &::after
+        width: 1em
+        +setBg(#005b4a)
+  // 公司沿革
+  .team
+    .list
+      max-width: 1030px
+      margin: 0 auto
+      >li
+        margin: 40px auto
+        @extend %clearfix
+      .pic
+        display: block
+        float: left
+      .txt
+        margin-left: 3%
+        float: right
+        width: calc(97% - 380px)
+      .name
+        padding: 20px
+        border: 5px solid #a0a0a0
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: space-between
+        align-items: center
+        align-content: stretch
+        line-height: normal
+        h6
+          font-size: 30px
+          color: #96835b
+        p
+          text-align: right
+      table
+        width: 92.5%
+        margin: 1em auto
+        th
+          white-space: nowrap
+          vertical-align: top
+  .structure
+    padding: 50px 0
+    +setBg(#eaeff5)
+    margin-bottom: 100px
+    img
+      display: block
+      margin: 60px auto 0
+  .professional
+    img
+      display: block
+      margin: 50px auto
+  .sustainable
+    .pic
+      max-width: 980px
+      margin: 50px auto
+    img
+      display: block
+  .green
+    img
+      display: block
+      margin: -1px auto 0
+    .banner
+      border-top: 1px solid #ddd
+      border-bottom: 1px solid #ddd
+      padding: 15px 0
+      margin: 50px auto 0
+
+
+
+    
+
+      
+
+      
+      
